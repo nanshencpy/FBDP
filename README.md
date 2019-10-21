@@ -14,10 +14,10 @@ bin/hadoop jar RelationAlgebra.jar <集合的上级文件夹路径>
 ```
   另附源代码：RelationAlgebra.java
 ### Advantages
-#### MatrixMultiply
-1. reduce函数无需知道数据来自哪个文件，避免了将数据来源在 Mapper 和 Reducer 之间进行传递，提高了运行效率；
-2. 将坐标自定义为数据结构，提高了代码的可读性，降低了开发和更新的难度；
-3. 将坐标第二位的数据类型设置为DoubleWritable，考虑了矩阵值数据类型的多样性，增强了程序的鲁棒性；
+* MatrixMultiply
+   1. reduce函数无需知道数据来自哪个文件，避免了将数据来源在 Mapper 和 Reducer 之间进行传递，提高了运行效率；
+   2. 将坐标自定义为数据结构，提高了代码的可读性，降低了开发和更新的难度；
+   3. 将坐标第二位的数据类型设置为DoubleWritable，考虑了矩阵值数据类型的多样性，增强了程序的鲁棒性；
 #### RelationAlgebra
 待写
 ### Developer
