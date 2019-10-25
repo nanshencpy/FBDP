@@ -23,5 +23,8 @@
    4. 待写
 * RelationAlgebra
    1. 待写
+* InvertedIndex
+   1. 重载Text的compareTo(BinaryComparable other)函数，按照单词和词频进行有序输出；
+   2. 待写
 ### Developer
   南京大学陈鹏宇
