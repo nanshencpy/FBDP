@@ -2,22 +2,19 @@
 
 ### Background
   大数据处理课程作业四
-### Install & Usage
-* 矩阵乘法程序
+### Usage
+* 矩阵乘法程序 MatrixMultiply.java
 ```
 命令行参数：<M矩阵的文件路径> <N矩阵的文件路径> <输出文件路径>
 ```
-附源代码：MatrixMultiply.java
-* 关系代数程序
+* 关系代数程序 RelationAlgebra.java
 ```
 命令行参数：<输入文件的上级文件夹路径>
 ```
-附源代码：RelationAlgebra.java
-* 倒排索引程序
+* 倒排索引程序 InvertedIndex.java
 ```
 命令行参数：<输入文件的上级文件夹路径> <输出文件路径>
 ```
-附源代码：InvertedIndex.java
 ### Advantages
 * MatrixMultiply
    1. reduce函数无需知道数据来自哪个文件，避免了将数据来源在 Mapper 和 Reducer 之间进行传递，提高了运行效率；
