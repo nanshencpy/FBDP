@@ -20,11 +20,10 @@
    1. reduce函数无需知道数据来自哪个文件，避免了将数据来源在 Mapper 和 Reducer 之间进行传递，提高了运行效率；
    2. 将坐标自定义为数据结构，提高了代码的可读性，降低了开发和更新的难度；
    3. 将坐标第二位的数据类型设置为DoubleWritable，考虑了矩阵值数据类型的多样性，增强了程序的鲁棒性；
-   4. 待写
 * RelationAlgebra
-   1. 待写
+   1. 多个mapreduce程序叠加使用，实现一次运行得到所有结果；
 * InvertedIndex
    1. 重载Text的compareTo(BinaryComparable other)函数，按照单词和词频进行有序输出；
-   2. 待写
+   2. 使用combiner，提高了运行效率；
 ### Developer
   南京大学陈鹏宇
