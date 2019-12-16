@@ -20,6 +20,7 @@ SELECT count(*) as num brandid as bid FROM test WHERE action = '0' GROUP BY bran
 
 |数量|品牌|
 |----|----|
+|49151|1360|
 |10130|3738|
 |9719|82|
 |9426|1446|
