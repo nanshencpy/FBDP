@@ -3,20 +3,20 @@
 Hive操作
 * 把精简数据集导入到数据仓库Hive中
 * 查询双11那天有多少人购买了商品
-```
-SELECT count(DISTINCT userid) as num FROM test WHERE action = '2';
-```
+  ```
+  SELECT count(DISTINCT userid) as num FROM test WHERE action = '2';
+  ```
 输出37202
 * 查询双11那天男女买家购买商品的比例
-```
-SELECT count(gender) as num FROM test WHERE action = '2' and gender = '0';
-SELECT count(gender) as num FROM test WHERE action = '2' and gender = '1';
-```
+  ```
+  SELECT count(gender) as num FROM test WHERE action = '2' and gender = '0';
+  SELECT count(gender) as num FROM test WHERE action = '2' and gender = '1';
+  ```
 分别输出39058和38932
 * 查询双11那天浏览次数前十的品牌
-```
-SELECT count(*) as num brandid as bid FROM test WHERE action = '0' GROUP BY brandid ORDER BY num DESC;
-```
+  ```
+  SELECT count(*) as num brandid as bid FROM test WHERE action = '0' GROUP BY brandid ORDER BY num DESC;
+  ```
 
 |数量|品牌|
 |----|----|
