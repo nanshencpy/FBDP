@@ -1,10 +1,10 @@
 阶段四任务（数据挖掘）：
-* 针对预处理后的训练集和测试集，基于MapReduce或Spark MLlib编写程序预测回头客
-* 评估预测准确率
 
-使用Spark MLlib中Logistic、SVM、NaiveBayes和RandomForest编写程序；
-使用F1对预测的准确率进行评估；
-通过改变训练集中正反例的比例，每个算法训练一百个模型，绘出训练集中正反例比例与预测的准确率的图像；
+* 使用Spark MLlib中Logistic、SVM、NaiveBayes和RandomForest编写程序；
+
+* 使用F1对预测的准确率进行评估；
+
+* 通过改变训练集中正反例的比例，每个算法训练一百个模型，绘出训练集中正反例比例与预测的准确率的图像；
 ```
 from pyspark import SparkContext
 from pyspark.mllib.regression import LabeledPoint
