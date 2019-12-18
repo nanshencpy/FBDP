@@ -2,11 +2,15 @@
 
 * 使用Spark MLlib中Logistic、SVM、NaiveBayes和RandomForest编写程序；
 
+* 将train_after按照70%：30%划分成训练集和测试集；
+
 * 使用accuracy_score对预测的准确率进行评估；
 
 * 通过改变训练集中正反例的比例，每个算法训练十个模型，绘出训练集中正反例比例与预测的准确率的图像；
+
+* data.txt是对test_after的预测。
+
 ```
-#%%
 from pyspark import SparkContext
 from pyspark.mllib.regression import LabeledPoint
 from pyspark.mllib.classification import LogisticRegressionWithLBFGS, SVMWithSGD, NaiveBayes
@@ -54,5 +58,12 @@ plt.legend()
 plt.savefig('acc.jpg', dpi = 900)
 
 sc.stop()
+
+calculate_data = calculate.map(lambda x: list(map(int, x.split(',')[0: 4])))
+s = nb.predict(calculate_data ).collect()
+with open('data.txt','w') as f:
+    for item in s:
+        f.write(str(item))
+        f.write('\n')
 
 ```
