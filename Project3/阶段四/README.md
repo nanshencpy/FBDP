@@ -2,7 +2,7 @@
 
 * 使用Spark MLlib中Logistic、SVM、NaiveBayes和RandomForest编写程序；
 
-* 将train_after按照70%：30%划分成训练集和测试集；
+* 将train_after按照70%:30%划分成训练集和测试集；
 
 * 使用accuracy_score对预测的准确率进行评估；
 
