@@ -51,7 +51,7 @@ plt.plot(x_axis, s_p, label='SVM')
 plt.plot(x_axis, n_p, label='NaiveBayes')
 plt.plot(x_axis, r_p, label='RandomForest')
 plt.legend()
-plt.savefig('f1.jpg', dpi = 900)
+plt.savefig('acc.jpg', dpi = 900)
 
 sc.stop()
 
