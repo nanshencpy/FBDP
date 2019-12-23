@@ -10,9 +10,9 @@ test = sc.textFile('test.csv')
 train = sc.textFile('train.csv')
 calculate = sc.textFile('test_after.csv')
 
-test_key = test.map(lambda x: list(map(int, x.split(',')[1: 3])))
+test_key = test.map(lambda x: list(map(int, x.split(',')[1: 4])))
 test_value = test.map(lambda x: list(map(int, x.split(',')[-1])))
-train_data = train.map(lambda x: (int(x.split(',')[-1]), list(map(int, x.split(',')[1: 3]))))
+train_data = train.map(lambda x: (int(x.split(',')[-1]), list(map(int, x.split(',')[1: 4]))))
 
 
 l_p = []

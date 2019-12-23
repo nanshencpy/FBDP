@@ -101,7 +101,7 @@
 
    - 使用MLlib中Logistic、SVM、NaiveBayes和RandomForest编写程序
 
-   - 使用 age_range 和 gender 进行预测
+   - 使用 用户年龄段、性别和卖家id 进行预测
 
 - 将train_after按照70%:30%划分成训练集和测试集
 
