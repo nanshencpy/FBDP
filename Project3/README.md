@@ -22,9 +22,9 @@
 - Hive 2.3.x
 
 ## 3. 实验过程
-3.1  MapReduce：
+3.1  MapReduce（代码分别见Attention.java和Sell.java）
 
-* Attention.java：统计各省的双十一前十热门关注产品
+* 统计各省的双十一前十热门关注产品
 
   <img src="阶段1/热门购买产品截图.png" alt="yarn架构" style="zoom:100%;" />
 
@@ -32,7 +32,7 @@
 命令行参数：<输入文件路径>
 ```
 
-* Sell.java：统计各省的双十一前十热门销售产品
+* 统计各省的双十一前十热门销售产品
 
   <img src="阶段1/热门关注产品截图.png" alt="yarn架构" style="zoom:100%;" />
 
@@ -83,8 +83,7 @@
   | 7661  | 8235 |
   <img src="阶段2/查询命令3.png" alt="yarn架构" style="zoom:100%;" />
 
-
-3.3  Spark
+3.3  Spark（代码见task3.py）
 
 * 统计各省销售最好的产品类别前十（销售最多前10的产品类别）
 
@@ -98,14 +97,19 @@
 
   <img src="阶段3/任务3截图.png" alt="yarn架构" style="zoom:100%;" />
 
-3.4  数据挖掘：
+3.4  数据挖掘（代码见task4.py）：
+
    - 使用MLlib中Logistic、SVM、NaiveBayes和RandomForest编写程序
+
+   - 使用 age_range 和 gender 进行预测
 
 - 将train_after按照70%:30%划分成训练集和测试集
 
 - 使用accuracy_score对预测的准确率进行评估
 
-- 通过改变训练集中正反例的比例，每个算法训练十个模型，绘出训练集中正反例比例与预测的准确率的图像
+- 通过**改变训练集中正反例的比例**，每个算法训练十个模型，绘出训练集中正反例比例与预测的准确率的图像
+
+  
 
   <img src="阶段4/acc.jpg" alt="yarn架构" style="zoom:100%;" />
 
